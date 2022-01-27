@@ -1,12 +1,14 @@
 # proiect2
 
-Acest proiect are in componenta doua masini virtuale create prin Vagrant in care sunt active cate un docker postgresql cu o baza de date.  
+This project contains 2 VMs provisioned with Vagrant, each of them containing a postgresql sample DB running in docker containers.
 
-Ambele VM se folosesc de filesystem-ul zfs pentru a genera backup-uri la datasetul bazei de date de pe VM1 iar cu ajutorul pyznap acest backup este trimis automat catre VM2. 
+Both VMs use the zfs filesystem and on the VM1 it generates backups for the database dataset which is sent automatically to VM2 using pyznap.
 
-Se poate seta numarul de backup-uri redinut de fiecare VM prin scripturile din /bin/backup.sh de pe fiecare VM.
+The number of backups held by each VM can be set using the /bin/backup.sh scripts in both VMs.
 
-Resurse:
+
+Resources:
+
 https://www.iceflatline.com/2020/02/a-simple-script-for-creating-and-deleting-rolling-zfs-snapshots-in-freebsd/
 https://docs.docker.com/install/linux/docker-ce/ubuntu/
 https://github.com/yboetz/pyznap
