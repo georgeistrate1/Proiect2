@@ -1,6 +1,6 @@
 # proiect2
 
-This project contains 2 VMs provisioned with Vagrant, each of them containing a postgresql sample DB running in docker containers.
+This project contains 2 VMs provisioned with Vagrant, each of them containing a postgresql sample DB running in docker container.
 
 Both VMs use the zfs filesystem and on the VM1 it generates backups for the database dataset which is sent automatically to VM2 using pyznap.
 
